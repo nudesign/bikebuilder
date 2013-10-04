@@ -1,0 +1,14 @@
+/*header -------------------------------------------------- */
+.main-header {
+  background-color: #4D4D4D;
+  height: 52px;
+  .app-logo {
+    display: inline;
+    float: left;
+    margin: 0px;
+  }
+  .login-list {
+    float: right;
+    list-style: none;
+  }
+}

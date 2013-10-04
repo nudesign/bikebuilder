@@ -1,22 +1,32 @@
+/* reset ------------------------------------------------------- */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+
+/* appwide --------------------------------------------------- */
 body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #aaa;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
+.is-hidden {
+  display: none;
+}
+.inverse-color {
+  color: #FFF;
+}
+.is-active {
+  color: #F00;
 }
 
-.hero-unit h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+/* structure --------------------------------------------------- */
+.container {
+  width: 320px;
+  margin: 0px auto;
 }

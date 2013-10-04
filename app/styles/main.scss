@@ -1,6 +1,11 @@
 /* UTILS */
+@import '_/colors.scss';
 
 /* LAYOUTS */
 @import 'layouts/base.scss';
 
 /* MODULES */
+@import 'modules/header.scss';
+@import 'modules/new_build.scss';
+@import 'modules/builds_list_header.scss';
+@import 'modules/filters_list.scss';
