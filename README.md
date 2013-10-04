@@ -10,7 +10,7 @@ Installing project dependencies
 -
 
 Adding a new bower component
-_
+-
 
 - "$ bower install component --save"
 - "$ grunt bower-install"
