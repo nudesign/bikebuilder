@@ -1,11 +1,16 @@
-To install do as follows:
+Installing project dependencies
+-
 
 - install nodejs and npm
-- do "npm install -g yo"
-- do "npm install -g generator-angular"
-- cd into folder
-- do "bower install && npm install"
+- "$ npm install -g yo"
+- "$ npm install -g generator-angular"
+- "cd bikebuilder"
+- "$ bower install && npm install"
 
 -
-to add new bower component just do "bower install component"
-and then do "grunt bower-install"
+
+Adding a new bower component
+_
+
+- "$ bower install component --save"
+- "$ grunt bower-install"
