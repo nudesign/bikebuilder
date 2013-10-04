@@ -23,7 +23,7 @@ angular.module('bikebuilderApp', ['ngResource', 'ui.router'])
             templateUrl: 'views/application/header.html'
           },
           "main" : {
-            template: '<h1 style="font-size: 60px">{{ type }}</h1>',
+            templateURL: 'views/builds/new.html',
             controller: 'NewbuildCtrl'
           }
         }
