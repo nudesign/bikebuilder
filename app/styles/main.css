@@ -1,1 +1,72 @@
-body{background:#fafafa;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;color:#aaa}.hero-unit{margin:50px auto 0 auto;width:300px;font-size:18px;font-weight:200;line-height:30px;background-color:#eee;border-radius:6px;padding:60px}.hero-unit h1{font-size:60px;line-height:1;letter-spacing:-1px}
+/* reset ------------------------------------------------------- */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+
+/*header -------------------------------------------------- */
+.main-header {
+  background-color: #4D4D4D;
+  height: 52px;
+}
+.app-logo {
+  display: inline;
+  float: left;
+  margin: 0px;
+}
+.login-list {
+  float: right;
+  list-style: none;
+}
+
+/* new build ------------------------------------------------ */
+.new-build-title {
+  display: inline;
+  float: left;
+  padding: 4px 4px 6px;
+  text-align: left;
+  width: 100%;
+}
+.new-build-plus {
+  float: right;
+}
+.new-build-type-list {
+  border-top: 1px solid #CCC;
+  float: left;
+  padding: 8px 0px;
+  width: 100%;
+}
+.new-build-type-list-item {
+  background: url('') no-repeat #F2F2F2;
+  float: left;
+  height: 64px;
+  margin-right: 16px;
+  width: 64px;
+}
+
+/* appwide --------------------------------------------------- */
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.is-hidden {
+  display: none;
+}
+.inverse-color {
+  color: #FFF;
+}
+.is-active {
+  color: #F00;
+}
+
+/* structure --------------------------------------------------- */
+.container {
+  width: 320px;
+  margin: 0px auto;
+}

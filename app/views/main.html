@@ -1,9 +1,81 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
-</div>
+<header class="main-header">
+  <nav class="main-nav">
+    <h1 class="app-logo">
+      <img src="images/bike-builder.png" class="">
+    </h1>
+    <ul class="login-list inverse-color">
+      <li class="login-list-item login-facebook">
+        facebook
+      </li>
+      <li class="login-list-item login-twitter is-hidden">
+        twitter
+      </li>
+      <li class="login-list-item login-google is-hidden">
+        google+
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section id="main-content">
+  
+  <div class="new-build-ctn">
+    <label class="new-build-title is-active">
+      new build
+      <span class="new-build-plus is-active">+</span>
+    </label>
+    <ul class="new-build-type-list">
+      <a href="" class="block-link">
+        <li class="new-build-type-list-item build-type-road">
+          road
+        </li>
+      </a>
+      <a href="" class="block-link">
+        <li class="new-build-type-list-item build-type-montain">
+          montain
+        </li>
+      </a>
+      <a href="" class="block-link">
+        <li class="new-build-type-list-item  build-type-fixed">
+          fixed
+        </li>
+      </a>
+    </ul>
+  </div>
+  
+  <section class="builds-list">
+    <header class="builds-list-header">
+      <h2 class="builds-list-title">
+        builds
+      </h2>
+      <ul class="builds-filters-list">
+        <li class="builds-filters-list-item is-active">
+          all
+        </li>
+        <li class="builds-filters-list-item is-inactive">
+          my
+        </li>
+      </ul>
+    </header>
+    <article class="bike-build">
+      <img src="bike-build-avatar">
+      <hgroup class="bike-build-header">
+        <h3 class="bike-build-title">
+          Build name
+        </h3>
+        <h4 class="bike-build-subtitle">
+          build type
+        </h4>
+        <h5 class="bike-build-subtitle">
+          preço | peso
+        </h5>
+      </hgroup>
+      <hgroup class="bike-builder-header">
+        <h1 class="bike-builder-name">
+          Bike builder name
+        </h1>
+      </hgroup>
+    </article>
+  </section>
+  
+</section>
