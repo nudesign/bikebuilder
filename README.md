@@ -14,3 +14,8 @@ Adding a new bower component
 
 - "$ bower install component --save"
 - "$ grunt bower-install"
+
+Starting service
+-
+
+- grunt server
