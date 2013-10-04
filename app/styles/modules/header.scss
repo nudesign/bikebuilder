@@ -8,7 +8,19 @@
     margin: 0px;
   }
   .login-list {
+    @include span-columns(4);
     float: right;
-    list-style: none;
+    padding: 12px;
+    .login-label {
+      float: left;
+      padding: 6px 12px 0px;
+    }
+    .login-list-item {
+      background: url('../images/login-sprite.png') no-repeat;
+      float: left;
+      height: 28px;
+      text-indent: -999px;
+      width: 28px;
+    }
   }
 }
