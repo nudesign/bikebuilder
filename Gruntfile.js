@@ -324,10 +324,16 @@ module.exports = function (grunt) {
           '<%= yeoman.app %>/styles/main.css' : '<%= yeoman.app %>/styles/main.scss'
         }
       }
+    },
+    'bower-install': {
+      target: {
+        html: 'app/index.html'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-bower-install');
 
   grunt.registerTask('server', function (target) {
     if (target === 'dist') {
