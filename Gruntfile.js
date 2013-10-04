@@ -39,7 +39,7 @@ module.exports = function (grunt) {
       },
       styles: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.scss'],
-        tasks: ['copy:styles', 'autoprefixer', 'sass'],
+        tasks: ['sass', 'copy:styles', 'autoprefixer'],
         livereload: true
       },
       livereload: {
