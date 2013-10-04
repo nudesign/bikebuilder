@@ -1,5 +1,10 @@
+/* VENDORS */
+@import '../bower_components/bourbon/app/assets/stylesheets/_bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/_neat';
+
 /* UTILS */
 @import '_/colors';
+<<<<<<< HEAD
 @import '_/fonts';
 @import '_/structure';
 
@@ -13,3 +18,14 @@
 @import 'modules/filters_list';
 @import 'modules/header';
 @import 'modules/new_build';
+=======
+
+/* LAYOUTS */
+@import 'layouts/base';
+
+/* MODULES */
+@import 'modules/header';
+@import 'modules/new_build';
+@import 'modules/builds_list_header';
+@import 'modules/filters_list';
+>>>>>>> 22efd1cafe8311d6048fd8c9be7abf85843997bb
