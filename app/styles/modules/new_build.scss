@@ -15,6 +15,7 @@
   padding: 8px 0px 32px;
   width: 100%;
   .new-build-type-list-item {
+    @include transition;
     background: url('../images/build-types-sprite.png') no-repeat;
     float: left;
     height: 64px;
@@ -30,6 +31,12 @@
     }
     &.build-type-city {
       background-position: -128px 0px;
+    }
+  }
+  &:hover .new-build-type-list-item {
+    opacity: 0.2;
+    &.new-build-type-list-item:hover {
+      opacity: 1;
     }
   }
 }
