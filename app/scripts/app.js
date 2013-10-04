@@ -16,7 +16,7 @@ angular.module('bikebuilderApp', ['ngResource', 'ui.router'])
           }
         }
       })
-      .state('build#new', {
+      .state('builds#new', {
         url: '/builds/new/:type',
         views: {
           "header" : {
