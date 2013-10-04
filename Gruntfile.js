@@ -38,8 +38,9 @@ module.exports = function (grunt) {
         tasks: ['coffee:test']
       },
       styles: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-        tasks: ['copy:styles', 'autoprefixer']
+        files: ['<%= yeoman.app %>/styles/{,*/}*.scss'],
+        tasks: ['copy:styles', 'autoprefixer', 'sass'],
+        livereload: true
       },
       livereload: {
         options: {
@@ -313,8 +314,20 @@ module.exports = function (grunt) {
           ]
         }
       }
+    },
+    sass: {
+      dev: {
+        options: {
+          style: 'compressed'
+        },
+        files: {
+          '<%= yeoman.app %>/styles/main.css' : '<%= yeoman.app %>/styles/main.scss'
+        }
+      }
     }
   });
+
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('server', function (target) {
     if (target === 'dist') {
