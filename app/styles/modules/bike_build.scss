@@ -1,14 +1,22 @@
 .bike-build {
+  @include span-columns(10);
+  border-bottom: 1px solid $light-border-color;
+  padding: 8px 0px;
   .bike-build-avatar {
-    @include grid(5);
+    @include span-columns(5);
   }
   .bike-build-header {
-    @include grid(5);
+    @include span-columns(5);
+    @include omega;
     .bike-build-title {
       
     }
     .bike-build-subtitle {
       
     }
+  }
+  .bike-builder-ctn {
+    @include span-columns(5);
+    padding-top: 8px;
   }
 }

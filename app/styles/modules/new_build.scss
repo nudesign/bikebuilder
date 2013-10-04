@@ -15,11 +15,21 @@
   padding: 8px 0px 32px;
   width: 100%;
   .new-build-type-list-item {
-    background: url('') no-repeat #F2F2F2;
+    background: url('../images/build-types-sprite.png') no-repeat;
     float: left;
     height: 64px;
     margin: 0px 8px;
     padding-top: 64px;
+    text-align: center;
     width: 64px;
+    &.build-type-road {
+      background-position: 0px 0px;
+    }
+    &.build-type-fixed {
+      background-position: -64px 0px;
+    }
+    &.build-type-city {
+      background-position: -128px 0px;
+    }
   }
 }

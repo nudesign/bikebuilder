@@ -28,12 +28,12 @@ body {
   color: $inactive-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   @include font1;
+  @include title;
 }
 
-/* structure --------------------------------------------------- */
-.container {
-  width: 320px;
-  margin: 0px auto;
+h4, h5, h6 {
+  @include font1;
+  @include text;
 }
