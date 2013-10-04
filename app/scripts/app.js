@@ -6,7 +6,7 @@ angular.module('bikebuilderApp', ['ngResource', 'ui.router'])
     /* routers */
     $stateProvider
       .state('home', {
-        url: '',
+        url: '/',
         views: {
           "header" : {
             templateUrl: 'views/application/header.html'
@@ -16,15 +16,15 @@ angular.module('bikebuilderApp', ['ngResource', 'ui.router'])
           }
         }
       })
-      .state('new build', {
+      .state('build#new', {
         url: '/builds/new/:type',
         views: {
           "header" : {
             templateUrl: 'views/application/header.html'
           },
           "main" : {
-            templateURL: 'views/builds/new.html',
-            controller: 'NewbuildCtrl'
+            templateUrl: 'views/builds/new.html',
+            controller: 'NewBuildCtrl'
           }
         }
       });

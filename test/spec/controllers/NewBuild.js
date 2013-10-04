@@ -1,22 +1,19 @@
 'use strict';
 
-describe('Controller: NewbuildCtrl', function () {
+describe('Controller: NewBuildCtrl', function () {
 
   // load the controller's module
   beforeEach(module('bikebuilderApp'));
 
-  var NewbuildCtrl,
+  var NewBuildCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    NewbuildCtrl = $controller('NewbuildCtrl', {
+    NewBuildCtrl = $controller('NewBuildCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
-  });
 });
