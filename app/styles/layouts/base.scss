@@ -5,37 +5,26 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
 
 /* appwide --------------------------------------------------- */
-body {
-  @include font1;
-  @include text;
-}
-
 .is-hidden {
   display: none;
 }
+
 .inverse-color {
   color: $inverse-color;
 }
+
 .is-active {
   color: #F00;
 }
+
 .is-inactive {
   color: $inactive-color;
-}
-
-h1, h2, h3 {
-  @include font1;
-  @include title;
-}
-
-h4, h5, h6 {
-  @include font1;
-  @include text;
 }
 
 a:link {
@@ -54,4 +43,3 @@ a:active {
   color: $main-color;
   text-decoration: none;
 }
-

@@ -1,0 +1,51 @@
+.components-list {
+  border-top: 1px solid $mid-border-color;
+}
+
+.components-list-item {
+  @include clearfix;
+
+  @include ts_1;
+  @include tf_title;
+
+  border-bottom: 1px solid $light-border-color;
+  padding-top: 8px;
+  padding-bottom: 7px;
+
+  &.ico-arrow-right {
+    background: url('/images/ico-arrow_right.png') no-repeat right center;
+  }
+
+}
+
+.component-icon {
+  @include span-columns(2);
+}
+
+.component-spec {
+  @include span-columns(5);
+  @include tf_text;
+}
+
+.component-data {
+  @include span-columns(3);
+  @include omega;
+
+  dt {
+    display: none;
+  }
+
+  dd {
+    @include tf_text;
+  }
+}
+
+.build-components-title {
+  @include tf_text;
+  @include shift(2);
+
+  padding-top: 8px;
+  padding-bottom: 7px;
+
+  height: 32px;
+}

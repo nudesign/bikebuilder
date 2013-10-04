@@ -47,3 +47,17 @@
     }
   }
 }
+
+.build-name {
+  @include tf_title;
+  @include ts_1;
+}
+
+.build-cost {
+  @include tf_text;
+  @include ts_1;
+}
+
+.build-weight {
+  @extend .build-cost;
+}
