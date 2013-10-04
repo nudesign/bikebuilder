@@ -19,6 +19,14 @@
   }
   .bike-builder-ctn {
     @include span-columns(5);
+    .bike-builder-avatar {
+      float: left;
+      margin-right: 4px;
+    }
+    .bike-builder-header {
+      height: 16px;
+      overflow: hidden;
+    }
     .bike-builder-stats-list {
       @include clearfix;
       height: 16px;
