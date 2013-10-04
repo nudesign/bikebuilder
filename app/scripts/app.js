@@ -9,10 +9,10 @@ angular.module('bikebuilderApp', ['ngResource', 'ui.router'])
         url: '',
         views: {
           "header" : {
-            templateUrl: 'views/shared/header.html'
+            templateUrl: 'views/application/header.html'
           },
           "main" : {
-            templateUrl: 'views/index.html'
+            templateUrl: 'views/builds/index.html'
           }
         }
       });
