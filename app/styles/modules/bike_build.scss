@@ -1,0 +1,14 @@
+.bike-build {
+  .bike-build-avatar {
+    @include grid(5);
+  }
+  .bike-build-header {
+    @include grid(5);
+    .bike-build-title {
+      
+    }
+    .bike-build-subtitle {
+      
+    }
+  }
+}

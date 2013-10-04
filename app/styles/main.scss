@@ -1,11 +1,15 @@
 /* UTILS */
-@import '_/colors.scss';
+@import '_/colors';
+@import '_/fonts';
+@import '_/structure';
 
 /* LAYOUTS */
-@import 'layouts/base.scss';
+@import 'layouts/base';
+@import 'layouts/builds_list';
 
 /* MODULES */
-@import 'modules/header.scss';
-@import 'modules/new_build.scss';
-@import 'modules/builds_list_header.scss';
-@import 'modules/filters_list.scss';
+@import 'modules/bike_build';
+@import 'modules/builds_list_header';
+@import 'modules/filters_list';
+@import 'modules/header';
+@import 'modules/new_build';

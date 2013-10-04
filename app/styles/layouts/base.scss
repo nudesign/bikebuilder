@@ -3,6 +3,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 ul {
   list-style: none;
@@ -10,19 +11,25 @@ ul {
 
 /* appwide --------------------------------------------------- */
 body {
-  font-family: helvetica, arial, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
+  @include font1;
+  @include text;
 }
 
 .is-hidden {
   display: none;
 }
 .inverse-color {
-  color: #FFF;
+  color: $inverse-color;
 }
 .is-active {
   color: #F00;
+}
+.is-inactive {
+  color: $inactive-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include font1;
 }
 
 /* structure --------------------------------------------------- */

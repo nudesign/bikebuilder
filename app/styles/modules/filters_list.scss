@@ -1,0 +1,8 @@
+.builds-filters-list {
+  @include grid(8);
+  .builds-filters-list-item {
+    display: inline;
+    float: left;
+    margin-right: 20px;
+  }
+}

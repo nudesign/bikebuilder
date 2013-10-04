@@ -1,0 +1,7 @@
+.builds-list {
+  float: left;
+  width: 100%;
+  .builds-list-title {
+    @include grid(2);
+  }
+}
