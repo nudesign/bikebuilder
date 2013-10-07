@@ -1,5 +1,7 @@
 /*header -------------------------------------------------- */
 .main-header {
+  @include ts_1;
+  @include tf_text;
   background-color: #4D4D4D;
   height: 52px;
   .app-logo {

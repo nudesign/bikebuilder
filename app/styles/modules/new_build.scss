@@ -1,4 +1,9 @@
 /* new build ------------------------------------------------ */
+.new-build-ctn {
+  @include ts_1;
+  @include tf_text;
+}
+
 .new-build-title {
   display: inline;
   float: left;

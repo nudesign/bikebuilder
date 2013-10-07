@@ -1,4 +1,6 @@
 .bike-build {
+  @include ts_1;
+  @include tf_text;
   @include span-columns(10);
   border-bottom: 1px solid $light-border-color;
   padding: 8px 0px;
@@ -16,8 +18,13 @@
     @include omega;
     height: 64px;
     overflow: hidden;
+    .build-type {
+      @include tf_text;
+    }
   }
   .bike-builder-ctn {
+    @include tf_text;
+    @include ts_1;
     @include span-columns(5);
     .bike-builder-avatar {
       float: left;
@@ -26,6 +33,9 @@
     .bike-builder-header {
       height: 16px;
       overflow: hidden;
+      .bike-builder-name {
+        @include tf_text;
+      }
     }
     .bike-builder-stats-list {
       @include clearfix;

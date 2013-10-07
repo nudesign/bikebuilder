@@ -5,6 +5,8 @@
   float: left;
   padding: 4px 4px 6px;
   .builds-list-title {
+    @include ts_1;
+    @include tf_text;
     @include span-columns(2);
   }
 }
