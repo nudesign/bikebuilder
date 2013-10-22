@@ -40,4 +40,3 @@ angular.module('bikebuilderApp')
     $urlRouterProvider.otherwise('/');
 
   }]);
-  
