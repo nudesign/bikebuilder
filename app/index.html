@@ -11,15 +11,14 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
-    <!-- endbower -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+        <!-- endbower -->
 
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+</head>
   <body ng-app="bikebuilderApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -30,7 +29,6 @@
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
     <div class="container" ui-view="header"></div>
     <div class="container" ui-view="main"></div>
 
@@ -45,20 +43,24 @@
        ga('send', 'pageview');
     </script>
 
-    <script src="bower_components/angular/angular.js"></script>
-
     <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/routes.js"></script>
-    <script src="scripts/controllers/BuildsController.js"></script>
+    <script src="scripts/controllers/ComponentsIndex.js"></script>
+    <script src="scripts/controllers/EditBuild.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/NewBuild.js"></script>
+    <script src="scripts/services/Build.js"></script>
+    <script src="scripts/services/BuildTypeComponents.js"></script>
+    <script src="scripts/services/Component.js"></script>
     <!-- endbuild -->
-
 </body>
 </html>
