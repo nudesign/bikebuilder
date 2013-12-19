@@ -1,39 +1,45 @@
 <article class="l-new-build">
-  <header>
-    <h3 class="build-name">My {{ build_type }} Bike</h3>
-    <h4 class="build-cost">$ 200,00</h4>
-    <h4 class="build-weight">2.3 kg</h4>
+  <form>
+    <header>
+      <h3 class="build-name"><input type="text" name="build.name" value="{{ build.name }}"></h3>
+      <h4 class="build-cost">{{ build.cost | currency }}</h4>
+      <h4 class="build-weight">{{ build.weight }} kg</h4>
 
-    <span class="build-progress-bar" style="width: 23%;"></span>
-  </header>
+      <span class="build-progress-bar" style="width: {{ build.progress }}%;"></span>
+    </header>
 
-  <img src="http://placehold.it/296x188" alt="My New Awesome Build Photo" class="build-image">
+    <img src="http://placehold.it/296x188" alt="My New Awesome Build Photo" class="build-image">
 
-  <section class="build-components">
-    <h4 class="build-components-title">components</h4>
+    <section class="build-components">
+      <h4 class="build-components-title">components</h4>
 
-    <ul class="components-list">
+      <ul class="components-list">
 
-      <li class="components-list-item ico-arrow-right" ng-repeat="component in build_type_components.primary">
-        <img src="http://placehold.it/50x32" class="component-icon" alt="component name">
-        <h4 class="component-spec">{{component.name}}</h4>
-      </li>
+        <li class="components-list-item ico-arrow-right" ng-repeat="component in build_type_components.primary">
+          <img src="http://placehold.it/50x32" class="component-icon" alt="component name">
+          <h4 class="component-spec">{{component.name}}</h4>
+        </li>
 
-<!--  
-      <li class="components-list-item ico-arrow-right">
-        <img src="http://placehold.it/50x32" class="component-icon" alt="component name">
-        <h4 class="component-spec">Tanger alloy fork</h4>
-        <dl class="component-data">
-          <dt>weight</dt>
-          <dd>320 g</dd>
+  <!--  
+        <li class="components-list-item ico-arrow-right">
+          <img src="http://placehold.it/50x32" class="component-icon" alt="component name">
+          <h4 class="component-spec">Tanger alloy fork</h4>
+          <dl class="component-data">
+            <dt>weight</dt>
+            <dd>320 g</dd>
+  x
+            <dt>cost</dt>
+            <dd>R$ 200,00</dd>
+          </dl>
+        </li>
+   -->    
 
-          <dt>cost</dt>
-          <dd>R$ 200,00</dd>
-        </dl>
-      </li>
- -->    
+      </ul>
 
-    </ul>
-  </section>
+      <fieldset class="form-controls">
+        <input type="submit" value="save">
+      </fieldset>
 
+    </section>
+  </form>
 </article>
