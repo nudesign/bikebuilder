@@ -1,10 +1,6 @@
 'use strict';
 
 angular.module('bikebuilderApp')
-  .config(["$httpProvider", function($httpProvider) {
-    $httpProvider.defaults.headers.common['Accept'] = "application/json";
-  }])
-  .constant('API_HOST', 'http://localhost\\:3000')
   .config(['$stateProvider', function ($stateProvider) {
 
     /* routers */
@@ -20,6 +16,7 @@ angular.module('bikebuilderApp')
           }
         }
       })
+
       .state('builds#new', {
         url: '/builds/new/:type',
         views: {
@@ -29,6 +26,16 @@ angular.module('bikebuilderApp')
           "main" : {
             templateUrl: 'views/builds/new.html',
             controller: 'NewBuildCtrl'
+          }
+        }
+      })
+
+      .state('builds#new.addComponent', {
+        url: '/add-component/:component_type',
+        views: {
+          "main@" : {
+            templateUrl: 'views/components/index.html',
+            controller: 'ComponentsIndexCtrl'
           }
         }
       });
