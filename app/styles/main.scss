@@ -10,13 +10,14 @@
 
 /* LAYOUTS */
 @import 'layouts/base';
-@import 'layouts/builds/list';
+@import 'layouts/builds/index';
 @import 'layouts/builds/new';
 
 /* MODULES */
+@import 'modules/_list';
 @import 'modules/header';
 @import 'modules/filters_list';
-@import 'modules/bike_build';
-@import 'modules/builds_list_header';
-@import 'modules/new_build';
+@import 'modules/build_card';
+@import 'modules/build_cards_list';
+@import 'modules/new_build_types_menu';
 @import 'modules/components_list';
