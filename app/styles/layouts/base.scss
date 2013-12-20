@@ -11,20 +11,13 @@ ul {
 }
 
 /* appwide --------------------------------------------------- */
+body {
+  background-color: #f2f2f2;
+  @include ts_1;
+  @include tf_text;
+}
 .is-hidden {
   display: none;
-}
-
-.inverse-color {
-  color: $inverse-color;
-}
-
-.is-active {
-  color: #F00;
-}
-
-.is-inactive {
-  color: $inactive-color;
 }
 
 a:link {
@@ -42,4 +35,13 @@ a:hover {
 a:active {
   color: $main-color;
   text-decoration: none;
+}
+.block-link {
+  display: block;
+  overflow: auto;
+}
+.ctn-link {
+  @extend .block-link;
+  height: 100%;
+  width: 100%;
 }

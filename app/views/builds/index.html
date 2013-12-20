@@ -1,84 +1,298 @@
-<section id="main-content">
+<section ng-include="'views/builds/_new_build_types_menu.html'"></section>
   
-  <div class="new-build-ctn">
-    <label class="new-build-title">
-      create a new build
-    </label>
-    <ul class="new-build-type-list">
-      <a href="javascript://" ui-sref="builds#new({ type: 'city' })" class="block-link">
-        <li class="new-build-type-list-item  build-type-city">
-          city
-        </li>
-      </a>
-      <a href="javascript://" ui-sref="builds#new({ type: 'road' })" class="block-link">
-        <li class="new-build-type-list-item build-type-road">
-          road
-        </li>
-      </a>
-      <a href="javascript://" ui-sref="builds#new({ type: 'fixed_gear' })" class="block-link">
-        <li class="new-build-type-list-item  build-type-fixed">
-          fixie
-        </li>
-      </a>
+<section class="l-builds-index">
+
+  <header class="build-cards-list-header">
+    <h2 class="builds-list-title">
+      builds
+    </h2>
+    <ul class="builds-filters-list">
+      <li class="builds-filters-list-item is-active">
+        all
+      </li>
+      <li class="builds-filters-list-item is-inactive">
+        my
+      </li>
+      <li class="builds-filters-list-item is-inactive">
+        favorites
+      </li>
     </ul>
-  </div>
-  
-  <section class="builds-list">
-    <header class="list-header builds-list-header">
-      <h2 class="builds-list-title">
-        builds
-      </h2>
-      <ul class="builds-filters-list">
-        <li class="builds-filters-list-item is-active">
-          all
-        </li>
-        <li class="builds-filters-list-item is-inactive">
-          my
-        </li>
-        <li class="builds-filters-list-item is-inactive">
-          favorites
-        </li>
-      </ul>
-    </header>
-      <article class="bike-build">
-        <div class="bike-build-thumb-ctn">
-          <a href="">
-            <img src="images/build-ph.jpg" class="bike-build-thumb">
-          </a>
+  </header>
+
+  <section class="build-cards-list">
+
+    <article class="build-card">
+      <a href="#" class="block-link">
+
+        <div class="build-card-thumb-ctn">
+          <img src="images/build-ph.jpg" class="build-card-thumb">
         </div>
-        <a href="">
-          <hgroup class="bike-build-header">
-            <h3 class="build-name">
-              Build name
-            </h3>
-            <h4 class="build-type">
-              build type
-            </h4>
-            <h5 class="bike-build-subtitle build-cost">
-              price | weight
-            </h5>
-          </hgroup>
-        </a>
-        <a href="">
-          <div class="bike-builder-ctn">
-            <img src="images/bike-builder-ph.jpg" class="bike-builder-avatar">
-            <ul class="bike-builder-stats-list">
-              <li class="bike-builder-stats-list-item bike-builder-stats-build">
-                4
-              </li>
-              <li class="bike-builder-stats-list-item bike-builder-stats-ride">
-                5
-              </li>
-            </ul>
-            <hgroup class="bike-builder-header">
-              <h4 class="bike-builder-name">
-                Bike builder name
-              </h4>
-            </hgroup>
+
+        <hgroup class="build-card-info">
+          <h3 class="build-name">
+            Build name
+          </h3>
+          <h4 class="build-type">
+            build type
+          </h4>
+          <div class="build-card-subtitle build-cost">
+            price | weight
           </div>
-        </a>
-      </article>
-    
+        </hgroup>
+
+        <div class="build-card-author-ctn">
+          <img src="images/bike-builder-ph.jpg" class="build-card-author-avatar">
+          <ul class="build-card-author-stats-list">
+            <li class="build-card-author-stats-list-item build-card-author-stats-build">
+              4
+            </li>
+            <li class="build-card-author-stats-list-item build-card-author-stats-ride">
+              5
+            </li>
+          </ul>
+          <hgroup class="build-card-author-header">
+            <h4 class="build-card-author-name">
+              Bike builder name
+            </h4>
+          </hgroup>
+        </div>
+
+      </a>
+    </article>
+
+    <article class="build-card">
+      <a href="#" class="block-link">
+
+        <div class="build-card-thumb-ctn">
+          <img src="images/build-ph.jpg" class="build-card-thumb">
+        </div>
+
+        <hgroup class="build-card-info">
+          <h3 class="build-name">
+            Build name
+          </h3>
+          <h4 class="build-type">
+            build type
+          </h4>
+          <div class="build-card-subtitle build-cost">
+            price | weight
+          </div>
+        </hgroup>
+
+        <div class="build-card-author-ctn">
+          <img src="images/bike-builder-ph.jpg" class="build-card-author-avatar">
+          <ul class="build-card-author-stats-list">
+            <li class="build-card-author-stats-list-item build-card-author-stats-build">
+              4
+            </li>
+            <li class="build-card-author-stats-list-item build-card-author-stats-ride">
+              5
+            </li>
+          </ul>
+          <hgroup class="build-card-author-header">
+            <h4 class="build-card-author-name">
+              Bike builder name
+            </h4>
+          </hgroup>
+        </div>
+
+      </a>
+    </article>
+
+    <article class="build-card">
+      <a href="#" class="block-link">
+
+        <div class="build-card-thumb-ctn">
+          <img src="images/build-ph.jpg" class="build-card-thumb">
+        </div>
+
+        <hgroup class="build-card-info">
+          <h3 class="build-name">
+            Build name
+          </h3>
+          <h4 class="build-type">
+            build type
+          </h4>
+          <div class="build-card-subtitle build-cost">
+            price | weight
+          </div>
+        </hgroup>
+
+        <div class="build-card-author-ctn">
+          <img src="images/bike-builder-ph.jpg" class="build-card-author-avatar">
+          <ul class="build-card-author-stats-list">
+            <li class="build-card-author-stats-list-item build-card-author-stats-build">
+              4
+            </li>
+            <li class="build-card-author-stats-list-item build-card-author-stats-ride">
+              5
+            </li>
+          </ul>
+          <hgroup class="build-card-author-header">
+            <h4 class="build-card-author-name">
+              Bike builder name
+            </h4>
+          </hgroup>
+        </div>
+
+      </a>
+    </article>
+
+    <article class="build-card">
+      <a href="#" class="block-link">
+
+        <div class="build-card-thumb-ctn">
+          <img src="images/build-ph.jpg" class="build-card-thumb">
+        </div>
+
+        <hgroup class="build-card-info">
+          <h3 class="build-name">
+            Build name
+          </h3>
+          <h4 class="build-type">
+            build type
+          </h4>
+          <div class="build-card-subtitle build-cost">
+            price | weight
+          </div>
+        </hgroup>
+
+        <div class="build-card-author-ctn">
+          <img src="images/bike-builder-ph.jpg" class="build-card-author-avatar">
+          <ul class="build-card-author-stats-list">
+            <li class="build-card-author-stats-list-item build-card-author-stats-build">
+              4
+            </li>
+            <li class="build-card-author-stats-list-item build-card-author-stats-ride">
+              5
+            </li>
+          </ul>
+          <hgroup class="build-card-author-header">
+            <h4 class="build-card-author-name">
+              Bike builder name
+            </h4>
+          </hgroup>
+        </div>
+
+      </a>
+    </article>
+
+    <article class="build-card">
+      <a href="#" class="block-link">
+
+        <div class="build-card-thumb-ctn">
+          <img src="images/build-ph.jpg" class="build-card-thumb">
+        </div>
+
+        <hgroup class="build-card-info">
+          <h3 class="build-name">
+            Build name
+          </h3>
+          <h4 class="build-type">
+            build type
+          </h4>
+          <div class="build-card-subtitle build-cost">
+            price | weight
+          </div>
+        </hgroup>
+
+        <div class="build-card-author-ctn">
+          <img src="images/bike-builder-ph.jpg" class="build-card-author-avatar">
+          <ul class="build-card-author-stats-list">
+            <li class="build-card-author-stats-list-item build-card-author-stats-build">
+              4
+            </li>
+            <li class="build-card-author-stats-list-item build-card-author-stats-ride">
+              5
+            </li>
+          </ul>
+          <hgroup class="build-card-author-header">
+            <h4 class="build-card-author-name">
+              Bike builder name
+            </h4>
+          </hgroup>
+        </div>
+
+      </a>
+    </article>
+    <article class="build-card">
+      <a href="#" class="block-link">
+
+        <div class="build-card-thumb-ctn">
+          <img src="images/build-ph.jpg" class="build-card-thumb">
+        </div>
+
+        <hgroup class="build-card-info">
+          <h3 class="build-name">
+            Build name
+          </h3>
+          <h4 class="build-type">
+            build type
+          </h4>
+          <div class="build-card-subtitle build-cost">
+            price | weight
+          </div>
+        </hgroup>
+
+        <div class="build-card-author-ctn">
+          <img src="images/bike-builder-ph.jpg" class="build-card-author-avatar">
+          <ul class="build-card-author-stats-list">
+            <li class="build-card-author-stats-list-item build-card-author-stats-build">
+              4
+            </li>
+            <li class="build-card-author-stats-list-item build-card-author-stats-ride">
+              5
+            </li>
+          </ul>
+          <hgroup class="build-card-author-header">
+            <h4 class="build-card-author-name">
+              Bike builder name
+            </h4>
+          </hgroup>
+        </div>
+
+      </a>
+    </article>
+
+    <article class="build-card">
+      <a href="#" class="block-link">
+
+        <div class="build-card-thumb-ctn">
+          <img src="images/build-ph.jpg" class="build-card-thumb">
+        </div>
+
+        <hgroup class="build-card-info">
+          <h3 class="build-name">
+            Build name
+          </h3>
+          <h4 class="build-type">
+            build type
+          </h4>
+          <div class="build-card-subtitle build-cost">
+            price | weight
+          </div>
+        </hgroup>
+
+        <div class="build-card-author-ctn">
+          <img src="images/bike-builder-ph.jpg" class="build-card-author-avatar">
+          <ul class="build-card-author-stats-list">
+            <li class="build-card-author-stats-list-item build-card-author-stats-build">
+              4
+            </li>
+            <li class="build-card-author-stats-list-item build-card-author-stats-ride">
+              5
+            </li>
+          </ul>
+          <hgroup class="build-card-author-header">
+            <h4 class="build-card-author-name">
+              Bike builder name
+            </h4>
+          </hgroup>
+        </div>
+
+      </a>
+    </article>
+
   </section>
   
 </section>
