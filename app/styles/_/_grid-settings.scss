@@ -5,8 +5,11 @@ $column: 24px;
 $gutter: 16px;
 $grid-columns: 24;
 
-$tablet-v: new-breakpoint(min-width 640px 24);
-$tablet-h: new-breakpoint(min-width 960px 36);
+$tablet-v-width: 640px;
+$tablet-h-width: 960px;
+
+$tablet-v: new-breakpoint(min-width $tablet-v-width 24);
+$tablet-h: new-breakpoint(min-width $tablet-h-width 36);
 $desktop: new-breakpoint(min-width 1280px 48);
 $big-desktop: new-breakpoint(min-width 1600px 60);
 $giant-desktop: new-breakpoint(min-width 1920px 72);

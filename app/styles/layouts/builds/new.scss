@@ -1,6 +1,10 @@
 .l-new-build {
   @include clearfix;
 
+  @include media($tablet-v) {
+    width: $tablet-v-width;
+  }
+
   header {
     @include clearfix;
 

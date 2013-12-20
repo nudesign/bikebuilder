@@ -1,45 +1,32 @@
-<article class="l-new-build">
-  <form>
-    <header>
-      <h3 class="build-name"><input type="text" name="build.name" value="{{ build.name }}"></h3>
-      <h4 class="build-cost">{{ build.cost | currency }}</h4>
-      <h4 class="build-weight">{{ build.weight }} kg</h4>
+<form class="l-new-build">
 
-      <span class="build-progress-bar" style="width: {{ build.progress }}%;"></span>
-    </header>
+  <section class="build-form-header">
+    <h2 class="build-form-name"><input type="text" name="build.name" value="{{ build.name }}"></h2>
+    <div class="build-form-summary">
+      <span class="build-form-weight">{{ build.weight }} kg</span>\
+      <span class="build-form-cost">{{ build.cost | currency }}</span>
+    </div>
+  </section>
 
-    <img src="http://placehold.it/296x188" alt="My New Awesome Build Photo" class="build-image">
+  <div class="build-form-progress-bar" style="width: 30%;"></div>
 
-    <section class="build-components">
-      <h4 class="build-components-title">components</h4>
+  <img src="http://placehold.it/296x188" alt="My New Awesome Build Photo" class="build-form-image">
 
-      <ul class="components-list">
+  <section class="build-form-components">
+    <h4 class="build-form-components-title">components</h4>
 
-        <li class="components-list-item ico-arrow-right" ng-repeat="component in build_type_components.primary">
-          <img src="http://placehold.it/50x32" class="component-icon" alt="component name">
-          <h4 class="component-spec">{{component.name}}</h4>
-        </li>
+    <ul class="components-list">
 
-  <!--  
-        <li class="components-list-item ico-arrow-right">
-          <img src="http://placehold.it/50x32" class="component-icon" alt="component name">
-          <h4 class="component-spec">Tanger alloy fork</h4>
-          <dl class="component-data">
-            <dt>weight</dt>
-            <dd>320 g</dd>
-  x
-            <dt>cost</dt>
-            <dd>R$ 200,00</dd>
-          </dl>
-        </li>
-   -->    
+      <li class="components-list-item ico-arrow-right" ng-repeat="component in build_type_components.primary">
+        <img src="http://placehold.it/50x32" class="component-icon" alt="component name">
+        <h4 class="component-spec">{{component.name}}</h4>
+      </li>
 
-      </ul>
+    </ul>
 
-      <fieldset class="form-controls">
-        <input type="submit" value="save">
-      </fieldset>
+    <fieldset class="form-controls">
+      <input type="submit" value="save">
+    </fieldset>
+  </section>
 
-    </section>
-  </form>
-</article>
+</form>
