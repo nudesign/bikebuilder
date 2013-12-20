@@ -16,23 +16,11 @@
       <ul class="components-list">
 
         <li class="components-list-item ico-arrow-right" ng-repeat="component in build_type_components.primary">
-          <img src="http://placehold.it/50x32" class="component-icon" alt="component name">
-          <h4 class="component-spec">{{component.name}}</h4>
+          <a ui-sref="builds#new.addComponent({component_type: component.id})">
+            <img src="http://placehold.it/50x32" class="component-icon" alt="component name">
+            <h4 class="component-spec">{{component.name}}</h4>
+          </a>
         </li>
-
-  <!--  
-        <li class="components-list-item ico-arrow-right">
-          <img src="http://placehold.it/50x32" class="component-icon" alt="component name">
-          <h4 class="component-spec">Tanger alloy fork</h4>
-          <dl class="component-data">
-            <dt>weight</dt>
-            <dd>320 g</dd>
-  x
-            <dt>cost</dt>
-            <dd>R$ 200,00</dd>
-          </dl>
-        </li>
-   -->    
 
       </ul>
 

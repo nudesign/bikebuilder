@@ -29,8 +29,8 @@
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-    <div class="container" ui-view="header"></div>
-    <div class="container" ui-view="main"></div>
+    <div ui-view="header"></div>
+    <div ui-view="main"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -55,13 +55,14 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/routes.js"></script>
-    <script src="scripts/controllers/ComponentsIndex.js"></script>
+    <script src="scripts/controllers/AddComponentToBuild.js"></script>
     <script src="scripts/controllers/EditBuild.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/NewBuild.js"></script>
     <script src="scripts/services/Build.js"></script>
     <script src="scripts/services/BuildTypeComponents.js"></script>
     <script src="scripts/services/Component.js"></script>
+    <script src="scripts/services/BuildManager.js"></script>
     <!-- endbuild -->
 </body>
 </html>
